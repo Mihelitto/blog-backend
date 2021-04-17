@@ -14,6 +14,10 @@ SECRET_KEY = env.str("SECRET_KEY", "REPLACE_ME")
 
 DEBUG = env.bool("DEBUG", True)
 
+STATIC_URL = "/static/"
+
+STATIC_DIR = []
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
