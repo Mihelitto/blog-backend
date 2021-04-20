@@ -30,7 +30,7 @@
                       {{most_popular_post.image_url}}
                     {% else %}
                       {% static 'img/banner/blog.png' %}
-                    {% endif %}" alt="">
+                    {% endif %}" alt="{{most_popular_post.title}}">
                 </div>
                 <div class="blog__slide__content">
                   <h3><a href="{% url 'post_detail' slug=most_popular_post.slug %}">{{most_popular_post.title}}</a></h3>
@@ -58,7 +58,7 @@
                       {{fresh_post.image_url}}
                     {% else %}
                       {% static 'img/banner/blog.png' %}
-                    {% endif %}" alt="">
+                    {% endif %}" alt="{{fresh_post.title}}">
                   <ul class="thumb-info" style="max-width: 550px;">
                     <li><a href="#"><i class="ti-user"></i>{{fresh_post.author}}</a></li>
                     <li><a href="#"><i class="ti-notepad"></i>{{fresh_post.published_at}}</a></li>
